@@ -1,24 +1,39 @@
 {
-  "shops": [
-    {
-      "name": "METRO",
-      "delivery_text": "Ближайшая доставка сегодня 21:00–23:00",
-      "link": "https://metro.ru/shops/123"
-    },
-    {
-      "name": "Ашан",
-      "delivery_text": "Ближайшая доставка сегодня 18:00–20:00",
-      "link": "https://ashan.ru/partner/petrushka"
-    },
-    {
-      "name": "ВкусВилл",
-      "delivery_text": "Быстрая доставка от 20 до 60 минут",
-      "link": "https://vkusvill.ru/express"
-    },
-    {
-      "name": "ВИКТОРИЯ",
-      "delivery_text": "Ближайшая доставка сегодня 17:00–19:00",
-      "link": "https://victoria.ru/offers"
+  "name": "Магазины-партнеры",
+  "description": "GET-запрос для получения списка магазинов-партнеров при переходе на экран",
+  "request": {
+    "method": "GET",
+    "url": "/api/v1/shops/partners",
+    "headers": {
+      "Authorization": "Bearer <token>",
+      "Accept": "application/json"
     }
-  ]
+  },
+  "response": {
+    "status": 200,
+    "body": {
+      "shops": [
+        {
+          "name": "METRO",
+          "delivery_text": "Ближайшая доставка сегодня 21:00–23:00",
+          "link": "https://metro.ru/shops/123"
+        },
+        {
+          "name": "Ашан",
+          "delivery_text": "Ближайшая доставка сегодня 18:00–20:00",
+          "link": "https://ashan.ru/partner/petrushka"
+        },
+        {
+          "name": "ВкусВилл",
+          "delivery_text": "Быстрая доставка от 20 до 60 минут",
+          "link": "https://vkusvill.ru/express"
+        },
+        {
+          "name": "ВИКТОРИЯ",
+          "delivery_text": "Ближайшая доставка сегодня 17:00–19:00",
+          "link": "https://victoria.ru/offers"
+        }
+      ]
+    }
+  }
 }
