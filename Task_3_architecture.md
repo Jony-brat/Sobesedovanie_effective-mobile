@@ -11,7 +11,7 @@ flowchart TB
     subgraph Backend["2. Бэкенд"]
         B1["API Gateway<br/>POST /api/v1/notifications/send"]
         B2["Микросервис уведомлений<br/>Валидация → Обогащение → Шаблоны"]
-        B3["Очередь сообщений<br/>RabbitMQ / Kafka"]
+        B3["Очередь сообщений<br/>(RabbitMQ)"]
         B4["PUSH Worker<br/>(обработчик очереди)"]
         B5[("БД<br/>токены + история")]
     end
